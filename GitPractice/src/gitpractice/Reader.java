@@ -11,9 +11,8 @@ import java.util.Scanner;
  */
 public class Reader {
     
-    private static ArrayList<Person> persons = new ArrayList<>();
-
-    public static void read() throws FileNotFoundException {
+    
+    public static void read( ArrayList<Person> persons ) throws FileNotFoundException {
         
         Scanner sc = new Scanner(new File("us-500.csv"));
         sc.nextLine();
@@ -28,4 +27,8 @@ public class Reader {
             persons.add(p);
         }
     }
+
+    
+    
+    
 }
